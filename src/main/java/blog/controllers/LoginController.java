@@ -1,6 +1,7 @@
 package blog.controllers;
 
 import blog.forms.LoginForm;
+
 import blog.services.NotificationService;
 import blog.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 
 import javax.validation.Valid;
 
@@ -31,6 +33,7 @@ public class LoginController {
             notificationService.addErrorMessage("Please fill the form correctly!");
             return "users/login";
         }
+
         notificationService.addInfoMessage("Login successful!");
         return "redirect:/";
 

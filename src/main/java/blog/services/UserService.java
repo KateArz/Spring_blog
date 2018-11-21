@@ -10,6 +10,7 @@ public interface UserService {
     User create(User user);
     User edit(User user);
     void deleteById(Long id);
+    User getUserByCredentials(String login, String password);
 
 
 }

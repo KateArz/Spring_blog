@@ -7,7 +7,7 @@
 <body>
 <header th:replace="layout :: site-header"></header>
 
-<main id="posts">
+<main id="posts" class="container">
     <article>
         <h2 class="title" th:text="${post.title}">Post Title</h2>
         <div>
@@ -15,8 +15,8 @@
             <span th:text="${#dates.format(post.date, 'dd-MMM-yyyy')}">22-May-2016</span>
             <span th:if="${post.author}" th:remove="tag">
         <i>by</i>
-        <span th:text="${post.author.fullName != null ?
-                         post.author.fullName : post.author.username}">Svetlin Nakov</span>
+        <span th:text="${post.author.fullname != null ?
+                         post.author.fullname : post.author.username}">Svetlin Nakov</span>
         </span>
         </div>
         <p class="content" th:utext="${post.body}">Post content</p>

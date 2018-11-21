@@ -17,7 +17,7 @@ public class Post {
     @Lob @Column(nullable = false)
     private String body;
 
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @ManyToOne(optional = true, fetch = FetchType.LAZY)
     private User author;
 
     @Column(nullable = false)
@@ -27,13 +27,18 @@ public class Post {
     public Post() {
     }
 
-    public Post(Long id, String title, String body, User author) {
-        this.id = id;
+    public Post( String title, String body, User author) {
         this.title = title;
         this.body = body;
         this.author = author;
     }
 
+
+    public Post( String title, String body) {
+        this.title = title;
+        this.body = body;
+
+    }
 
     public Long getId() {
         return id;

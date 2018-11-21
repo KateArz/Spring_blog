@@ -1,12 +1,14 @@
 package blog.models;
 
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name="users")
-public class User {
+public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +21,7 @@ public class User {
     private String passwordHash;
 
     @Column(length = 100)
-    private String fullName;
+    private String fullname;
 
     @OneToMany(mappedBy = "author")
     private Set<Post> posts = new HashSet<Post>();
@@ -29,12 +31,16 @@ public class User {
         super();
     }
 
-    public User(Long id, String username, String fullName) {
-        this.id = id;
+    public User(String username, String fullname, String passwordHash) {
         this.username = username;
-        this.fullName = fullName;
+        this.fullname = fullname;
+        this.passwordHash = passwordHash;
     }
 
+    public User(String username, String passwordHash) {
+        this.username = username;
+        this.passwordHash = passwordHash;
+    }
 
     public void setId(Long id) {
         this.id = id;
@@ -48,8 +54,8 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
     public void setPosts(Set<Post> posts) {
@@ -59,21 +65,52 @@ public class User {
 
 
 
-
     public Long getId() {
         return id;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        List list = new ArrayList<Role>();
+        list.add(new Role("Admin"));
+        return list;
+    }
+
+    @Override
+    public String getPassword() {
+        return passwordHash;
     }
 
     public String getUsername() {
         return username;
     }
 
+    @Override
+    public boolean isAccountNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return false;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return false;
+    }
+
     public String getPasswordHash() {
         return passwordHash;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getFullname() {
+        return fullname;
     }
 
     public Set<Post> getPosts() {
@@ -86,7 +123,7 @@ public class User {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", passwordHash='" + passwordHash + '\'' +
-                ", fullName='" + fullName + '\'' +
+                ", fullname='" + fullname + '\'' +
                 '}';
     }
 }

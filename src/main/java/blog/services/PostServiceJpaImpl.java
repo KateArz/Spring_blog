@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -33,6 +34,7 @@ public class PostServiceJpaImpl implements PostService {
 
     @Override
     public Post create(Post post) {
+        post.setDate(new Date());
         return this.postRepo.save(post);
     }
 
