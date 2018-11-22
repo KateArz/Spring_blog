@@ -3,53 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e30e0e2-8384-43cb-836c-14e433b446b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/BlogMvcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/BlogMvcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/controllers/AllPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/controllers/AllPostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/controllers/CreatePostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/controllers/CreatePostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/controllers/DeletePostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/controllers/DeletePostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/controllers/EditPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/controllers/EditPostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/controllers/Registrationcontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/controllers/Registrationcontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/forms/CreatePostForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/forms/CreatePostForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/forms/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/forms/RegistrationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/models/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/services/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/services/CustomAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/services/PostServiceJpaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/services/PostServiceJpaImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blog/services/UserServiceJpaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blog/services/UserServiceJpaImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/posts/allposts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/posts/allposts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/posts/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/posts/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/posts/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/posts/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/posts/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/posts/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/posts/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/posts/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/allusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/allusers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/BlogMvcApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/BlogMvcApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/controllers/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/models/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/models/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/services/PostServiceJpaImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/services/PostServiceJpaImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/services/PostServiceStubImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/services/PostServiceStubImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/blog/services/UserServiceJpaImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/blog/services/UserServiceJpaImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/posts/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/posts/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,7 +30,7 @@
     <session id="-1695889015">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="41" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
@@ -392,7 +345,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542809228898" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542809337901" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Stady/homework/jpa" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -496,12 +449,12 @@
       <workItem from="1542375990945" duration="20000" />
       <workItem from="1542538349569" duration="5769000" />
       <workItem from="1542551489770" duration="814000" />
-      <workItem from="1542799264970" duration="8691000" />
+      <workItem from="1542799264970" duration="8891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111245000" />
+    <option name="totallyTimeSpent" value="111445000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,7 +466,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
