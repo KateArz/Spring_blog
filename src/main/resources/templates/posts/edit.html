@@ -8,22 +8,25 @@
 <header th:replace="layout :: site-header"></header>
 
 <main class="container">
-<form method="post" th:object="${editPost}">
-    <input type="hidden" th:value="*{id}" name="id"/>
-    <div><label for="title">Title:</label> </div>
-    <input type="text" id="title" name="title" th:value="*{title}" />
-    <span class="formError" th:if="${#fields.hasErrors('title')}"
-          th:errors="*{title}">Invalid username</span>
 
-    <div><label for="body">Content:</label> </div>
-    <textarea rows = "20" cols = "80" id="body" type="text" name="body" th:field="*{body}" />
-    <span class="formError" th:if="${#fields.hasErrors('body')}"
-          th:errors="*{body}">Invalid body</span>
+    <form class="col-lg-8" method="post" th:object="${editPost}">
+        <input type="hidden" th:value="*{id}" name="id"/>
 
+        <div class="form-group"><label for="title">Title:</label>
+            <input  class="form-control" type="text" id="title" name="title" th:value="*{title}"/>
+            <span class="formError" th:if="${#fields.hasErrors('title')}"
+                  th:errors="*{title}">Invalid username</span>
+        </div>
 
-    <div><input type="submit" value="Save"/></div>
-</form>
+        <div class="form-group"><label for="body">Content:</label>
+            <textarea class="form-control" rows="10" id="body" type="text" name="body" th:field="*{body}"/>
+            <span class="formError" th:if="${#fields.hasErrors('body')}"
+                  th:errors="*{body}">Invalid body</span>
+        </div>
+
+        <div><input class="button btn-success btn-sm" type="submit" value="Save"/></div>
+    </form>
 </main>
-<footer th:replace="layout :: site-footer" ></footer>
+<footer th:replace="layout :: site-footer"></footer>
 </body>
 </html>

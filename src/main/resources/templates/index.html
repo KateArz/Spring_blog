@@ -33,7 +33,7 @@
         <div class="col-2">
             <aside>
                 <h2>Recent Posts</h2>
-                <a href="#" th:each="p : ${latest5Posts}" th:text="${p.title}" th:href="@{/posts/view/{id}/(id=${p.id})}">
+               <a href="#" th:each="p : ${latest5Posts}" th:text="${p.title}" th:href="@{/posts/view/{id}/(id=${p.id})}">
                     WWork Begins on HTML5.1
                 </a>
             </aside>

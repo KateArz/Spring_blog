@@ -47,4 +47,9 @@ public class PostServiceJpaImpl implements PostService {
     public void deleteById(Long id) {
         this.postRepo.delete(id);
     }
+
+
+    public List<Post> findAllByOrderByDateDesc(){
+        return this.postRepo.findAllByOrderByDateDesc();
+    }
 }

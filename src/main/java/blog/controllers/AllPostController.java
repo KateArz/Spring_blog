@@ -16,7 +16,7 @@ public class AllPostController {
 
     @RequestMapping("posts")
     public String allPosts( Model model) {
-        List<Post> posts = postService.findAll();
+        List<Post> posts = postService.findAllByOrderByDateDesc();
         model.addAttribute("posts", posts);
         return "posts/allposts";
 

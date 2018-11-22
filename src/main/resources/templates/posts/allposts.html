@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 
 <head th:replace="layout :: site-head">
     <meta charset="UTF-8"/>
@@ -9,32 +9,34 @@
 <body>
 <header th:replace="layout :: site-header"></header>
 <main class="container">
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Content</th>
-        <th>Date</th>
-        <th>Author ID</th>
-        <th>Action</th>
-    </tr>
+
+    <div class="row">
+        <div class="col-lg-1"><b>ID</b></div>
+        <div class="col-lg-2"><b>Title</b></div>
+        <div class="col-lg-5"><b>Content</b></div>
+        <div class="col-lg-2"><b>Date</b></div>
+        <div class="col-lg-1"><b>Author ID</b></div>
+        <div class="col-lg-1"><b>Action</b></div>
+    </div>
 
     <th:block th:each="post : ${posts}">
-        <tr>
-            <td th:text="${post.id}">...</td>
-            <td th:text="${post.title}">...</td>
-            <td th:text="${post.body}">...</td>
-            <td th:text="${post.date}">...</td>
-  <!-- djghjcc fdnjhjv -->
-            <td>
-                <a href="register.html" th:href="@{posts/edit/{id}/(id=${post.id})}">Edit</a>
+        <div class="row marginBottom">
+            <div class="col-lg-1" th:text="${post.id}">...</div>
+            <div class="col-lg-2" th:text="${post.title}">...</div>
+            <div class="col-lg-5 " th:text="${post.body}">...</div>
+            <div class="col-lg-2" th:text="${#dates.format(post.date, 'dd-MMM-yyyy')}">...</div>
+            <div class="col-lg-1" th:text="${post.author?.id}">...</div>
+                    <!-- djghjcc fdnjhjv -->
+            <div class="col-lg-1">
+                <p><a href="register.html" th:href="@{posts/edit/{id}/(id=${post.id})}">Edit</a></p>
                 <a href="delete.html" th:href="@{posts/delete/{id}/(id=${post.id})}">Delete</a>
-            </td>
+            </div>
 
-        </tr>
+        </div>
+
     </th:block>
 
-</table>
+
 </main>
 <footer th:replace="layout :: site-footer"></footer>
 </body>
