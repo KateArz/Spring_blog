@@ -13,4 +13,6 @@ public interface PostService {
     void  deleteById(Long id);
 
     List<Post> findAllByOrderByDateDesc();
+
+    List<Post> findPostsByUserId(Long userId);
 }

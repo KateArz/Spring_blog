@@ -24,7 +24,7 @@ public class PostServiceJpaImpl implements PostService {
 
     @Override
     public List<Post> findLatest5() {
-        return this.postRepo.findLatest5Posts(new PageRequest(0,5));
+        return this.postRepo.findLatest5Posts(new PageRequest(0, 5));
     }
 
     @Override
@@ -49,7 +49,11 @@ public class PostServiceJpaImpl implements PostService {
     }
 
 
-    public List<Post> findAllByOrderByDateDesc(){
+    public List<Post> findAllByOrderByDateDesc() {
         return this.postRepo.findAllByOrderByDateDesc();
+    }
+
+    public List<Post> findPostsByUserId(Long userId) {
+        return this.postRepo.findPostsByUserId(userId);
     }
 }
